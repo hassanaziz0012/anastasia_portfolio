@@ -1,0 +1,14 @@
+{
+    "builds": [
+        {
+            "src": "anastasia_portfolio/wsgi.py",
+            "use": "@vercel/python"
+        }
+    ],
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "anastasia_portfolio/wsgi.py"
+        }
+    ]
+}
