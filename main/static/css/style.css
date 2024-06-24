@@ -135,10 +135,17 @@ hr {
   border-radius: 2px;
   text-align: center;
   padding: 80px 40px 80px 40px;
-  -webkit-transition: all 0.6s ease-in;
-          transition: all 0.6s ease-in;
+  -webkit-transition: all 0.3s ease-in;
+          transition: all 0.3s ease-in;
 }
-.work-wrapper:hover { border-color: #eb5424; }
+.work-wrapper:hover { 
+  border-color: #eb5424; 
+  background-color: #eb5424; 
+  color: #fff;
+}
+.work-wrapper:hover .tm-work-h3, .work-wrapper:hover i.fa {
+  color: #fff;
+}
 .work-wrapper .fa {
   color: #888888;
   font-size: 60px;
@@ -343,9 +350,14 @@ hr {
 .youtube:hover {
   background: #202020;
 }
-.instagram { background: #ca4369; }
+/* .instagram { background: #ca4369; }
 .linkedin { background: #0270ad; }
-.youtube { background: #f70000; }
+.youtube { background: #f70000; } */
+
+.instagram { background: #eb5424; }
+.linkedin { background: #eb5424; }
+.youtube { background: #eb5424; }
+
 .media {
   padding: 80px 40px 80px 40px;
   -webkit-transition: all 0.6s ease-in;
