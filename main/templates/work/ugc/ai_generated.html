@@ -1,0 +1,71 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+{% include "navigation.html" %}
+
+<section class="tm-padding-top-bottom-100">
+    <div class="container text-center">
+        <h2 class="title">AI Generated</h2>
+        
+        <div class="row" style="display: flex; flex-wrap: wrap;">
+            <div class="col-lg-3 col-md-4">
+                <img src="{% static 'work/ugc/ai-generated/1.jpg' %}" class="fluid-img">
+            </div>
+
+            <div class="col-lg-3 col-md-4">
+                <img src="{% static 'work/ugc/ai-generated/2.jpg' %}" class="fluid-img">
+            </div>
+
+            <div class="col-lg-3 col-md-4">
+                <img src="{% static 'work/ugc/ai-generated/3.jpg' %}" class="fluid-img">
+            </div>
+
+            <div class="col-lg-3 col-md-4">
+                <img src="{% static 'work/ugc/ai-generated/4.jpg' %}" class="fluid-img">
+            </div>
+
+            <div class="col-lg-3 col-md-4">
+                <img src="{% static 'work/ugc/ai-generated/5.jpg' %}" class="fluid-img">
+            </div>
+
+            <div class="col-lg-3 col-md-4">
+                <img src="{% static 'work/ugc/ai-generated/6.jpg' %}" class="fluid-img">
+            </div>
+
+            <div class="col-lg-3 col-md-4">
+                <img src="{% static 'work/ugc/ai-generated/7.jpg' %}" class="fluid-img">
+            </div>
+
+            <div class="col-lg-3 col-md-4">
+                <img src="{% static 'work/ugc/ai-generated/8.jpg' %}" class="fluid-img">
+            </div>
+
+            <div class="col-lg-3 col-md-4">
+                <img src="{% static 'work/ugc/ai-generated/9.jpg' %}" class="fluid-img">
+            </div>
+
+            <div class="col-lg-3 col-md-4">
+                <video controls style="height: auto; width: 100%;">
+                    <source src="{% static 'work/ugc/ai-generated/10.mp4' %}" type="video/mp4">
+                </video>
+            </div>
+
+            <div class="col-lg-3 col-md-4">
+                <video controls style="height: auto; width: 100%;">
+                    <source src="{% static 'work/ugc/ai-generated/11.mp4' %}" type="video/mp4">
+                </video>
+            </div>
+
+            <div class="col-lg-3 col-md-4">
+                <video controls style="height: auto; width: 100%;">
+                    <source src="{% static 'work/ugc/ai-generated/12.mov' %}" type="video/mp4">
+                </video>
+            </div>
+
+        </div>
+    </div>
+
+</section>
+
+{% endblock content %}
