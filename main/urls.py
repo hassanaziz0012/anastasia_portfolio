@@ -14,7 +14,21 @@ urlpatterns = [
 
     
     path("work/communication-management", CommunicationManagementWorkView.as_view(), name="communication-management-work"),
-    
+    path(
+        "work/communication-management/social-media-performance-reports",
+        TemplateView.as_view(template_name="work/communication_management/social_media.html"),
+        name="cm-social-media"
+    ),
+    path(
+        "work/communication-management/content-management", 
+        TemplateView.as_view(template_name="work/communication_management/content_management.html"), 
+        name="cm-content-management"
+    ),
+    path(
+        "work/communication-management/marketing",
+        TemplateView.as_view(template_name="work/communication_management/marketing.html"),
+        name="cm-marketing"
+    ),
     
     path("work/research-and-certifications", ResearchAndCertificationsWorkView.as_view(), name="research-certifications-work"),
     path(

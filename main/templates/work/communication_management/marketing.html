@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+{% include "navigation.html" %}
+
+<section class="tm-padding-top-bottom-100">
+    <div class="container text-center">
+        <h2 class="title">Marketing</h2>
+
+        <!-- <h3>Stories and Reels</h3> -->
+        
+        <div class="row" style="display: flex; flex-wrap: wrap;">
+
+            <div class="col-md-6">
+                <img src="{% static 'work/communication-management/marketing/preview-1.png' %}" class="fluid-img" alt="" />
+                <div class='button neon-button'>
+                    <a href="{% static 'work/communication-management/marketing/1.pdf' %}" class='neon-link' target="_blank">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        Download File
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <img src="{% static 'work/communication-management/marketing/preview-2.png' %}" class="fluid-img" alt="" />
+                <div class='button neon-button'>
+                    <a href="{% static 'work/communication-management/marketing/2.pdf' %}" class='neon-link' target="_blank">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        Download File
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</section>
+
+{% endblock content %}
