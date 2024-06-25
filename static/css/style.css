@@ -1,3 +1,11 @@
+/* H custom - start*/
+.social-icons a {
+  padding-right: 10px;
+  padding-left: 10px;
+  font-size: 2.5rem;
+}
+/* H custom - end */
+
 body {
   background: #ffffff;
   font-family: 'Raleway', sans-serif;
@@ -354,9 +362,9 @@ hr {
 .linkedin { background: #0270ad; }
 .youtube { background: #f70000; } */
 
-.instagram { background: #eb5424; }
+/* .instagram { background: #eb5424; }
 .linkedin { background: #eb5424; }
-.youtube { background: #eb5424; }
+.youtube { background: #eb5424; } */
 
 .media {
   padding: 80px 40px 80px 40px;
