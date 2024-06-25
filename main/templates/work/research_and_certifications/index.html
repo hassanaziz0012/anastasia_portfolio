@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+{% block content %}
+{% include "navigation.html" %}
+
+<section class="tm-padding-top-bottom-100">
+    <div class="container text-center">
+        <h2 class="title">Research and Certifications</h2>
+
+        <p>
+            Discover the work I have done in managing and enhancing communication strategies for various clients. 
+            This area provides insights into my approach to community management and the revamping of social media 
+            platforms, demonstrating the value added to each client's digital communication efforts. 
+        </p>
+
+        <div class="row" style="display: flex; flex-wrap: wrap;">
+            <div class="col-md-4 col-sm-4">
+                <a href="{% url 'ugc-work' %}" style="color: inherit; text-decoration: inherit;">
+                    <div class="work-wrapper" style="height: 100%;">
+                        <h3 class="text-uppercase tm-work-h3">Business Plans</h3>
+                        <hr>
+                        <p>
+                            Detailed analyses of social media metrics and performance indicators.
+                        </p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-md-4 col-sm-4">
+                <a href="{% url 'ugc-work' %}" style="color: inherit; text-decoration: inherit;">
+                    <div class="work-wrapper" style="height: 100%;">
+                        <h3 class="text-uppercase tm-work-h3">University Work</h3>
+                        <hr>
+                        <p>
+                            A selection of my academic projects and research papers from my time at university.
+                        </p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-md-4 col-sm-4">
+                <a href="{% url 'ugc-work' %}" style="color: inherit; text-decoration: inherit;">
+                    <div class="work-wrapper" style="height: 100%;">
+                        <h3 class="text-uppercase tm-work-h3">Personal Projects</h3>
+                        <hr>
+                        <p>
+                            Independent projects that reflect my interests and expertise, including certifications and other notable achievements.
+                        </p>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+    </div>
+</section>
+{% endblock content %}

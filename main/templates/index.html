@@ -1,32 +1,7 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
-	<!-- START NAVIGATION -->
-	<div class="navbar navbar-default bs-dos-nav navbar-fixed-top sticky-navigation" role="navigation">
-		<div class="container">
-
-			<div class="navbar-header">
-				<button class="navbar-toggle" data-toggle="collapse" data-target="#rock-navigation">
-					<span class="icon icon-bar"></span>
-					<span class="icon icon-bar"></span>
-					<span class="icon icon-bar"></span>
-				</button>
-				<a href="#" class="navbar-brand">Anastasia</a>
-			</div>
-			<nav class="collapse navbar-collapse" id="rock-navigation">
-				<ul class="nav navbar-nav navbar-right main-navigation text-uppercase">
-					<li><a href="#home" class="smoothScroll">Home</a></li>
-					<li><a href="#work" class="smoothScroll">My Work</a></li>
-					<!-- <li><a href="#portfolio" class="smoothScroll">Portfolio</a></li> -->
-					<li><a href="#resume" class="smoothScroll">Resume</a></li>
-					<li><a href="#about" class="smoothScroll">About</a></li>
-					<li><a href="#contact" class="smoothScroll">Contact</a></li>
-				</ul>
-			</nav>
-
-		</div>
-	</div>
-	<!-- END NAVIGATION -->
+	{% include "navigation.html" with sticky=True %}
 
 	<!-- START HOME -->
 	<section id="home" class="the-home">
@@ -57,45 +32,51 @@
 				</div>
 
 				<div class="col-md-4 col-sm-4">
-					<div class="work-wrapper">
-						<i class="fa fa-flash"></i>
-						<h3 class="text-uppercase tm-work-h3">UGC <br><br></h3>
-						<hr>
-						<p>
-							Explore a diverse collection of my digital work categorised into six unique niches: 
-							UGC Automotive, Catering, Lifestyle, Fitness, Eproducts, and AI-Generated Content. 
-							Each niche features a variety of digital assets, including reels, videos, photos, 
-							logos, and ebooks. 
-						</p>
-					</div>
+					<a href="{% url 'ugc-work' %}" style="color: inherit; text-decoration: inherit;">
+						<div class="work-wrapper">
+							<i class="fa fa-flash"></i>
+							<h3 class="text-uppercase tm-work-h3">UGC <br><br></h3>
+							<hr>
+							<p>
+								Explore a diverse collection of my digital work categorised into six unique niches: 
+								UGC Automotive, Catering, Lifestyle, Fitness, Eproducts, and AI-Generated Content. 
+								Each niche features a variety of digital assets, including reels, videos, photos, 
+								logos, and ebooks. 
+							</p>
+						</div>
+					</a>
 				</div>
 				
 				<div class="col-md-4 col-sm-4">
-					<div class="work-wrapper">
-						<i class="fa fa-dashboard"></i>
-						<h3 class="text-uppercase tm-work-h3">Communication Management</h3>
-						<hr>
-						<p>
-							Discover the work I have done in managing and enhancing communication strategies for 
-							various clients. This area provides insights into my approach to community management 
-							and the revamping of social media platforms, demonstrating the value added to each 
-							client's digital communication efforts. 
-						</p>
-					</div>
+					<a href="{% url 'communication-management-work' %}" style="color: inherit; text-decoration: inherit;">
+						<div class="work-wrapper">
+							<i class="fa fa-dashboard"></i>
+							<h3 class="text-uppercase tm-work-h3">Communication Management</h3>
+							<hr>
+							<p>
+								Discover the work I have done in managing and enhancing communication strategies for 
+								various clients. This area provides insights into my approach to community management 
+								and the revamping of social media platforms, demonstrating the value added to each 
+								client's digital communication efforts. 
+							</p>
+						</div>
+					</a>
 				</div>
 				
 				<div class="col-md-4 col-sm-4">
-					<div class="work-wrapper">
-						<i class="fa fa-link"></i>
-						<h3 class="text-uppercase tm-work-h3">Research and Certifications</h3>
-						<hr>
-						<p>
-							This section highlights my academic and personal projects, including Business Plans, 
-							University Work, and Personal Projects. You will find comprehensive and well-researched 
-							documents that illustrate my skills in research, strategic planning, and continuous 
-							learning.
-						</p>
-					</div>
+					<a href="{% url 'research-certifications-work' %}" style="color: inherit; text-decoration: inherit;">
+						<div class="work-wrapper">
+							<i class="fa fa-link"></i>
+							<h3 class="text-uppercase tm-work-h3">Research and Certifications</h3>
+							<hr>
+							<p>
+								This section highlights my academic and personal projects, including Business Plans, 
+								University Work, and Personal Projects. You will find comprehensive and well-researched 
+								documents that illustrate my skills in research, strategic planning, and continuous 
+								learning.
+							</p>
+						</div>
+					</a>
 				</div>
 
 			</div>
@@ -295,6 +276,9 @@
 				</div>
 				<div class="col-md-3">
 					<img src="{% static '/images/companies/company-2.png' %}" alt="" class="fluid-img">
+				</div>
+				<div class="col-md-6">
+					<img src="{% static '/images/companies/company-3.png' %}" alt="" class="fluid-img">
 				</div>
 			</div>
 		</div>

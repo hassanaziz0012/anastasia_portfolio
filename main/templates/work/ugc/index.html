@@ -1,0 +1,91 @@
+{% extends 'base.html' %}
+{% block content %}
+{% include "navigation.html" %}
+
+<section class="tm-padding-top-bottom-100">
+    <div class="container text-center">
+        <h2 class="title">UGC Work</h2>
+
+        <p>
+            Explore a diverse collection of my digital work categorised into six unique niches: 
+            UGC Automotive, Catering, Lifestyle, Fitness, Eproducts, and AI-Generated Content. Each 
+            niche features a variety of digital assets, including reels, videos, photos, logos, and 
+            ebooks. 
+        </p>
+
+        <div class="row" style="display: flex; flex-wrap: wrap;">
+            <div class="col-md-4 col-sm-4">
+                <a href="{% url 'ugc-work' %}" style="color: inherit; text-decoration: inherit;">
+                    <div class="work-wrapper" style="height: 100%;">
+                        <h3 class="text-uppercase tm-work-h3">Automotive</h3>
+                        <hr>
+                        <p>
+                            High-quality content showcasing cars, automotive accessories, and everything in between.
+                        </p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-md-4 col-sm-4">
+                <a href="{% url 'ugc-work' %}" style="color: inherit; text-decoration: inherit;">
+                    <div class="work-wrapper" style="height: 100%;">
+                        <h3 class="text-uppercase tm-work-h3">Catering</h3>
+                        <hr>
+                        <p>
+                            Visual treats from the culinary world, featuring exquisite dishes and catering setups.
+                        </p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-md-4 col-sm-4">
+                <a href="{% url 'ugc-work' %}" style="color: inherit; text-decoration: inherit;">
+                    <div class="work-wrapper" style="height: 100%;">
+                        <h3 class="text-uppercase tm-work-h3">Lifestyle</h3>
+                        <hr>
+                        <p>
+                            Captivating images and videos capturing the essence of everyday life, fashion, and trends.
+                        </p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-md-4 col-sm-4">
+                <a href="{% url 'ugc-work' %}" style="color: inherit; text-decoration: inherit;">
+                    <div class="work-wrapper" style="height: 100%;">
+                        <h3 class="text-uppercase tm-work-h3">Fitness</h3>
+                        <hr>
+                        <p>
+                            Dynamic content focusing on workouts, fitness routines, and healthy living.
+                        </p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-md-4 col-sm-4">
+                <a href="{% url 'ugc-work' %}" style="color: inherit; text-decoration: inherit;">
+                    <div class="work-wrapper" style="height: 100%;">
+                        <h3 class="text-uppercase tm-work-h3">E-Products</h3>
+                        <hr>
+                        <p>
+                            A special collection featuring logos, ebooks, fitness plans, thumbnails, post covers, and posters.
+                        </p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-md-4 col-sm-4">
+                <a href="{% url 'ugc-work' %}" style="color: inherit; text-decoration: inherit;">
+                    <div class="work-wrapper" style="height: 100%;">
+                        <h3 class="text-uppercase tm-work-h3">AI-Generated Content</h3>
+                        <hr>
+                        <p>
+                            Cutting-edge digital assets created using advanced AI technologies.
+                        </p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock content %}
