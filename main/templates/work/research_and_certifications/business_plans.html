@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+{% include "navigation.html" %}
+
+<section class="tm-padding-top-bottom-100">
+    <div class="container text-center">
+        <h2 class="title">Business Plans</h2>
+
+        <!-- <h3>Stories and Reels</h3> -->
+        
+        <div class="row" style="display: flex; flex-wrap: wrap;">
+
+            <div class="col-lg-6 col-md-9">
+                <img src="{% static 'work/research-and-certifications/business-plans/preview.png' %}" class="fluid-img" alt="" />
+                <div class='button neon-button'>
+                    <a href="{% static 'work/research-and-certifications/business-plans/plan.pdf' %}" class='neon-link' target="_blank">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        Download Business Plan
+                    </a>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+</section>
+
+{% endblock content %}

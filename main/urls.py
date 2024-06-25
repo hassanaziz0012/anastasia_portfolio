@@ -17,4 +17,14 @@ urlpatterns = [
     
     
     path("work/research-and-certifications", ResearchAndCertificationsWorkView.as_view(), name="research-certifications-work"),
+    path(
+        "work/research-and-certifications/business-plans", 
+        TemplateView.as_view(template_name="work/research_and_certifications/business_plans.html"), 
+        name="rc-business-plans"
+    ),
+    path(
+        "work/research-and-certifications/university-work", 
+        TemplateView.as_view(template_name="work/research_and_certifications/university_work.html"), 
+        name="rc-university-work"
+    ),
 ]
