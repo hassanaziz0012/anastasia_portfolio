@@ -4,6 +4,19 @@
   padding-left: 10px;
   font-size: 2.5rem;
 }
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skill-tag {
+  border-radius: 500px;
+  background-color: #eb5424;
+  padding: 10px;
+  color: #fff;
+  margin: 5px;
+}
 /* H custom - end */
 
 body {
